@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="/vendors/angular.min.js"></script>
+    <script src="/scripts/client.js"></script>
+    <title>PRIME PEER DB 2016</title>
+</head>
+
+<body ng-app='myApp'>
+    <h1>PRIME PEER DB 2016</h1>
+    <div ng-controller='AssignmentController'>
+        <input type="text" placeholder="Assignment Name" ng-model='assignmentPost'>
+        <input type="text" placeholder="Student Name" ng-model='assignmentPost'>
+        <input type="text" placeholder="Score" ng-model='assignmentPost'>
+        <input type="text" placeholder="Date Completed" ng-model='assignmentPost'>
+        <button ng-click='postAssignment();'>Search</button>
+    </div>
+</body>
+
+</html>
