@@ -5,7 +5,6 @@ var assignments = new Schema({
     assignment_name: String,
     student_name: {
         type: String,
-        unique: true
     },
     score: Number,
     date_completed: Date

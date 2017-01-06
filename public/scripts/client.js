@@ -21,5 +21,11 @@ myApp.controller('AssignmentController', ['$scope', '$http', function($scope, $h
             console.log('response:', response);
         });
     }; // end postAssignment
+      $http({
+        method: 'GET',
+        url: '/'
+      }).then(function(response){
+        $scope.searchResults = response.data;
+      });
 
 }]);

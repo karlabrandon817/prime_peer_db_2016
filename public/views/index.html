@@ -14,7 +14,12 @@
         <input type="text" placeholder="Student Name" ng-model='studentIn'>
         <input type="text" placeholder="Score" ng-model='scoreIn'>
         <input type="text" placeholder="Date Completed" ng-model='dateIn'>
-        <button ng-click='postAssignment();'>Search</button>
+        <button ng-click='postAssignment();'>Add Assignment</button>
+        <div ng-repeat='x in searchResults track by $index'>
+          <p>
+            {{x.assignment_name}}
+          </p>
+        </div>
     </div>
 </body>
 

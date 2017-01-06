@@ -15,6 +15,10 @@ app.get('/', function(req, res){
   res.sendFile(pathToSend);
 });//end base url
 
+app.get('/', function(req, res){
+  console.log('your userResults are...', userResults);
+  res.send(userResults);
+}); // end get from database route
 
 app.listen(app.get('port'), function() {
     console.log('Listening on port: ', app.get("port"));
