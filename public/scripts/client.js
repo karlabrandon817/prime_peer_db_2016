@@ -10,7 +10,7 @@ myApp.controller('AssignmentController', ['$scope', '$http', function($scope, $h
         var kitties = $scope.assignmentPost;
         $http({
             method: 'POST',
-            url: '/table',
+            url: '/',
             //data to send
             data: kitties
         }).then(function(response) {
