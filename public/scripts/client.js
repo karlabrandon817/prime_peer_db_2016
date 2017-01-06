@@ -14,7 +14,7 @@ myApp.controller('AssignmentController', ['$scope', '$http', function($scope, $h
           console.log('searching for:', kitties);
         $http({
             method: 'POST',
-            url: '/',
+            url: '/assignment',
             //data to send
             data: kitties
         }).then(function(response) {
